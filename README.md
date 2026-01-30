@@ -1,3 +1,5 @@
+This project Help me to understand useState and useEffect Hooks of React JS. It is a simple Pagination UI/UX design.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
