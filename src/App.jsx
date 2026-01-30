@@ -26,8 +26,6 @@ const App = () => {
 
   return (
     <div>
-      <span className="text-amber-400 text-9xl absolute">{page}</span>
-
       <div className="bg-black p-5 text-white min-h-screen">
         {loading ? (
           // 🔄 LOADING SPINNER
@@ -57,7 +55,7 @@ const App = () => {
         )}
       </div>
 
-      <div className="flex justify-center gap-5 p-5">
+      <div className="flex justify-center items-center gap-5 p-5">
         <button
           className="bg-amber-400 p-5 rounded cursor-pointer disabled:opacity-50"
           disabled={page === 1 || loading}
@@ -65,7 +63,7 @@ const App = () => {
         >
           Prev
         </button>
-
+        <span className="text-black-400 text-xl sticky">Page {page}</span>
         <button
           className="bg-amber-400 p-5 rounded cursor-pointer disabled:opacity-50"
           disabled={loading}
